@@ -23,7 +23,7 @@ public class HashService {
             SecretKeyFactory factory = SecretKeyFactory.getInstance("PBKDF2WithHmacSHA1");
             hashedValue = factory.generateSecret(spec).getEncoded();
         } catch (InvalidKeySpecException | NoSuchAlgorithmException e) {
-            logger.error(e.getMessage());
+            //logger.error(e.getMessage());
         }
         return Base64.getEncoder().encodeToString(hashedValue);
     }

@@ -4,6 +4,8 @@ public class ChatMessage {
     private String username;
     private String message;
 
+    private String messageText;
+
     public String getUsername() {
         return username;
     }
@@ -18,5 +20,13 @@ public class ChatMessage {
 
     public void setMessage(String message) {
         this.message = message;
+    }
+
+    public String getMessageText() {
+        return getMessageText();
+    }
+
+    public void setMessageText(String messageText) {
+        this.messageText = messageText;
     }
 }
